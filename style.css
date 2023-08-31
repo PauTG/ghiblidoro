@@ -46,7 +46,11 @@
 #icon {
   cursor: pointer;
 }
-
+video{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
 .video {
   width: 100%;
   position: absolute;
@@ -77,9 +81,7 @@ body {
   color: black;
 }
 
-.timer{
-  color: black;
-}
+
 
 .totoro {
   width: 100px;
@@ -95,6 +97,7 @@ h1 {
 #timer1 {
   font-size: 70px;
   margin: auto;
+  color: black;
 }
 
 
@@ -229,4 +232,15 @@ a {
 
 a:visited {
   color: white;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 1114px){
+  *{
+    background-image: url('./img/wallresponsv.jpg');
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin-bottom: -20px;
+
+  }
 }
