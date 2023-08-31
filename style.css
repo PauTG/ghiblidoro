@@ -1,0 +1,232 @@
+* {
+  font-family: 'Ghibli';
+
+}
+
+@font-face {
+  font-family: 'Ghibli';
+  src: url("/font/Eyad\ Al-Samman\ -\ Ghibli.woff") format('woff');
+}
+
+@font-face {
+  font-family: 'Ghibli2';
+  src: url("./font/Eyad\ Al-Samman\ -\ Ghibli-Bold.woff") format('woff');
+}
+
+
+.fotonav {
+  height: 80px;
+}
+
+.fotonav:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+  font-size: 20px;
+  color: white;
+  position: relative;
+}
+
+.play {
+  width: 50px;
+  margin-right: 6%;
+  display: flex;
+  align-items: center;
+  filter: drop-shadow(2px 2px 6px #ffffff96);
+
+}
+
+#icon {
+  cursor: pointer;
+}
+
+.video {
+  width: 100%;
+  position: absolute;
+  margin: -10px;
+  padding: 0;
+  object-fit: cover;
+}
+
+body {
+  text-align: center;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.container {
+  border: 1px solid #e38d7a;
+  margin: 100px;
+  padding: 50px;
+  height: 400px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.84);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: black;
+}
+
+.timer{
+  color: black;
+}
+
+.totoro {
+  width: 100px;
+  height: auto;
+}
+
+h1 {
+  color: black;
+  font-size: 30px;
+}
+
+#timer,
+#timer1 {
+  font-size: 70px;
+  margin: auto;
+}
+
+
+
+#buttons,
+#buttons1 {
+  margin: 20px;
+  padding: 15px;
+  font-size: 50px;
+  display: flex;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #0000;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 30px;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+
+
+.container::before .container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container .timer-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.container .timer-buttons button:first-child {
+  margin-left: 0;
+}
+
+.container .timer-buttons button:last-child {
+  margin-right: 0;
+}
+
+
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs::before,
+.tabs::after {
+  content: "";
+  display: table;
+}
+
+.tabs::after {
+  clear: both;
+}
+
+.tab {
+  float: left;
+}
+
+.tab-switch {
+  display: none;
+}
+
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  border-right: 0.125rem;
+  cursor: pointer;
+  top: 0;
+  transition: all 0.25s;
+  font-family: 'Ghibli2';
+  font-size: 20px;
+  margin: 0;
+}
+
+.tab-label:hover {
+  top: -0.25rem;
+  transition: top 0.25s;
+}
+
+.tab-content {
+  height: 12rem;
+  position: absolute;
+  z-index: 1;
+  top: 2.75em;
+  left: 0;
+  padding: 1.618rem;
+  color: #2c3e50;
+  border-bottom: 0.25rem;
+  opacity: 0;
+  transition: all 0.35s;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+
+
+.tab-switch:checked+label+.tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+.footer {
+  position: relative;
+  font-size: 20px;
+  font-family: 'Ghibli2';
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
