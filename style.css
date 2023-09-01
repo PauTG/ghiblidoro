@@ -285,7 +285,6 @@ a:visited {
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-bottom: 27px;
   top: 40px;
   margin-top: 30px;
 
@@ -294,7 +293,7 @@ a:visited {
     font-size: 10px;
     font-size: 7px;
     margin-top: 10px;
-    top: 5em;
+    top: 90px;
     text-align: center;
     justify-content: center;
     padding: 10px;
@@ -310,17 +309,13 @@ a:visited {
     display: flex;
   }
 
-  label{ 
-    padding: 0px;
-    margin: 0px;
-  }
   .wrapper{
-    margin-top: 14 0px;
     display: flex;
-    margin-bottom: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
+
+
   }
 
   .h1 {
@@ -331,12 +326,9 @@ a:visited {
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
   }
   #buttons, #buttons1{
     font-size: 35px;
-    margin: 5px;
-    padding: 5px;
   }
 
   .tabs{
