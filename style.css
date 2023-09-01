@@ -1,4 +1,4 @@
-*, ::before, ::after {
+*{
   font-family: 'Ghibli';
 }
 
@@ -167,7 +167,7 @@ button:hover {
 
 
 .wrapper {
-  max-width: 50rem;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -195,16 +195,12 @@ button:hover {
 .tab-label {
   position: relative;
   display: block;
-  line-height: 2.75em;
-  height: 3em;
-  padding: 0 1em;
-  border-right: 0.125rem;
   cursor: pointer;
   top: 0;
   transition: all 0.25s;
-  font-family: 'Ghibli2';
-  font-size: 20px;
-  margin: 0;
+  font-family: 'Ghibli';
+  font-size: 19px;
+  margin: 5px;
   justify-content: center;
 }
 
