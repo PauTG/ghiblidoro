@@ -321,3 +321,73 @@ a:visited {
     white-space: nowrap;
   }
 }
+
+@media only screen and (min-width: 390px) and (max-width: 844px){
+  .container{
+    width: 90vw;
+    height: 45vh;
+    object-fit: cover;
+    justify-content:space-between;
+    font-size: 7px;
+    padding: 5px;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 100px;
+  }
+
+
+
+ .totoro{
+  width: 60px;
+  margin-top: 40px;
+  position: relative; 
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+ }
+ 
+
+
+  .tab-content{
+    font-size: 10px;
+    font-size: 7px;
+    margin-top: 10px;
+    top: 5em;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .tab-label{
+    font-size: 17px;
+    text-align: center;
+  }
+
+  label{ 
+    padding: 0px;
+    margin: 0px;
+  }
+  .wrapper{
+    margin-top: 14px;
+    display: flex;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  #timer,#timer1{
+    font-size: 35px;
+  }
+  #buttons, #buttons1{
+    font-size: 35px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  .tabs{
+    display: flex;
+    white-space: nowrap;
+  }
+}
