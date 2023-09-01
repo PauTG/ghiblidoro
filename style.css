@@ -339,6 +339,7 @@ a:visited {
   margin: 30px 0;
   width: 50px;
   top: 40px;
+  justify-content: center;
  }
   .tab-content{
     font-size: 10px;
@@ -348,12 +349,14 @@ a:visited {
     text-align: center;
     justify-content: center;
     padding: 10px;
+    display: flex;
   }
 
   .tab-label{
     font-size: 17px;
     text-align: center;
     margin-bottom: 20px;
+    display: flex;
   }
 
   label{ 
