@@ -271,11 +271,11 @@ a:visited {
   margin-bottom: 20px;
   top: 40px;
   animation-fill-mode: forwards;
-  position:static;
+  position: -webkit-sticky;
 }
  .totoro{
   width: 60px;
-  position: relative; 
+  position:-webkit-sticky;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -346,12 +346,14 @@ a:visited {
     margin-bottom: 30px;
     top: 10px;
     animation-fill-mode: forwards;
+    position: -webkit-sticky;
   }
  .totoro{
   animation-fill-mode: forwards;
   width:80px;
   height: 90px;
   justify-content: center;
+  position: -webkit-sticky;
  }
   .tab-content{
     font-size: 10px;
