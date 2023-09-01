@@ -271,6 +271,7 @@ a:visited {
   margin-bottom: 20px;
   top: 40px;
   animation-fill-mode: forwards;
+  position:static;
 }
  .totoro{
   width: 60px;
