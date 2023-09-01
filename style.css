@@ -68,9 +68,11 @@ video{
 }
 
 body {
-  text-align: center;
   background-color: #000;
   overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
@@ -260,6 +262,12 @@ a:visited {
     position: -webkit-sticky;
     align-items: center;
   }
+
+  body{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
   .container{
     width: 90vw;
     height: 45vh;
@@ -344,6 +352,13 @@ a:visited {
   *{
     position: -webkit-sticky;
     align-items: center;
+  }
+  body{
+    body{
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
   }
   .container{
     width: 90vw;
