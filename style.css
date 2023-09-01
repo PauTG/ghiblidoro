@@ -91,16 +91,38 @@ body {
   margin: 50px auto;
 }
 
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+@keyframes uncheck {
+  0% {
+    transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+ }
+  50% {
+    transform: rotate(30deg) translateX(9px);
+ }
+  75% {
+    transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+ }
+  100% {
+    transform: rotate(30deg);
+ }
 }
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+@keyframes check {
+  0% {
+    transform: rotate(30deg);
+ }
+  25% {
+    transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+ }
+  50% {
+    transform: rotate(30deg) translateX(9px);
+ }
+  100% {
+    transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+ }
 }
-
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
 .totoro {
   width: 100px;
   height: auto;
@@ -324,5 +346,38 @@ a:visited {
   .tabs{
     display: flex;
     white-space: nowrap;
+  }
+
+  @keyframes uncheck {
+    0% {
+      transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+   }
+    50% {
+      transform: rotate(30deg) translateX(9px);
+   }
+    75% {
+      transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+   }
+    100% {
+      transform: rotate(30deg);
+   }
+  }
+  @keyframes check {
+    0% {
+      transform: rotate(30deg);
+   }
+    25% {
+      transform: rotate(30deg) translateX(4.5px) scaleX(1.1);
+   }
+    50% {
+      transform: rotate(30deg) translateX(9px);
+   }
+    100% {
+      transform: rotate(-30deg) translateX(13.5px) translateY(8px);
+   }
+  }
+  html {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
   }
 }
