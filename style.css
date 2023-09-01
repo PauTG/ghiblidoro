@@ -338,7 +338,8 @@ a:visited {
 
  .totoro{
   margin: 30px 0;
-  top: 90px;
+  width: 90px;
+  top: 40px;
  }
   .tab-content{
     font-size: 10px;
