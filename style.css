@@ -90,6 +90,7 @@ body {
   color: black;
   justify-content: center;
   margin: 50px auto;
+  align-items: center;
 }
 
 
@@ -114,8 +115,8 @@ body {
 #timer,
 #timer1 {
   font-size: 70px;
-  margin: auto;
   color: black;
+  margin-top: 50px;
 }
 
 
@@ -254,7 +255,9 @@ a:visited {
 
 
 @media only screen and (min-width: 190px) and (max-width: 990px){
-
+  *{
+    cursor:pointer; cursor: hand;
+  }
   body{
     body{
       text-align: center;
@@ -286,7 +289,6 @@ a:visited {
  }
   .tab-content{
     font-size: 10px;
-    font-size: 7px;
     margin-top: 10px;
     top: 100px;
     text-align: center;
@@ -298,17 +300,17 @@ a:visited {
   }
 
   .tab-label{
-    font-size: 17px;
     text-align: center;
-    margin-bottom: 20px;
     display: flex;
   }
+
 
   .wrapper{
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   .h1 {
@@ -316,17 +318,18 @@ a:visited {
     color: black;
   }
 
-  .timer1{
-    font-size: 15px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin: 30px auto;
-    padding: 5px;
-  }
   #buttons, #buttons1{
     font-size: 35px;
   }
+  #tab-1, #tab-2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 10px;
+    margin: 2px;
+    position: relative;
+  }
+
 
   .tabs{
     display: flex;
