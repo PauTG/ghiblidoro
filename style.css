@@ -279,16 +279,7 @@ a:visited {
   }
 
 
-.divTotoro{
-  margin: 30px 0;
-  top: 10px;
-  animation-fill-mode: forwards;
-  position: -webkit-sticky;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 20px;
-}
+
  .totoro{
   width: 100px;
   height: 90px;
@@ -367,15 +358,7 @@ a:visited {
     margin-top: 20px;
     text-align: center;
   }
-  .divTotoro{
-    margin-top: 80px;
-   
-    animation-fill-mode: forwards;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    top: 20px;
-  }
+
  .totoro{
   width: 100px;
   height: 90px;
