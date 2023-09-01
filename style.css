@@ -331,6 +331,8 @@ a:visited {
     text-align: center;
     align-items: center;
     justify-content: center;
+    margin: 30px auto;
+    padding: 5px;
   }
   #buttons, #buttons1{
     font-size: 35px;
