@@ -255,6 +255,7 @@ a:visited {
 @media only screen and (min-width: 250px) and (max-width: 971px) {
   *{
     position: -webkit-sticky;
+    align-items: center;
   }
   .container{
     width: 90vw;
@@ -272,9 +273,10 @@ a:visited {
 .divTotoro{
   margin-top: 20px;
   margin-bottom: 20px;
-  top: 40px;
+  top: 30px;
   animation-fill-mode: forwards;
   position: -webkit-sticky;
+  align-items: center;
 }
  .totoro{
   width: 60px;
@@ -285,6 +287,7 @@ a:visited {
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   animation-fill-mode: forwards;
+  align-items: center;
  }
  
  
@@ -352,14 +355,12 @@ a:visited {
     margin-bottom: 30px;
     top: 10px;
     animation-fill-mode: forwards;
-    position: -webkit-sticky;
   }
  .totoro{
-  animation-fill-mode: forwards;
   width:80px;
   height: 90px;
   justify-content: center;
-  position: -webkit-sticky;
+
  }
   .tab-content{
     font-size: 10px;
