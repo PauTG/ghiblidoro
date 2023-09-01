@@ -26,7 +26,7 @@ function startTimer1() {
             } else {
                 clearInterval(timerInterval1);
                 isRunning1 = false;
-                startButton1.textContent = 'Start1';
+                startButton1.textContent = 'Start';
             }
         }, 1000);
     } else {
@@ -39,7 +39,7 @@ function startTimer1() {
 function resetTimer1() {
     clearInterval(timerInterval1);
     isRunning1 = false;
-    startButton1.textContent = 'Start1';
+    startButton1.textContent = 'Start';
     timeLeft1 = 600; // 10 minutes in seconds
     pomodoroCount = 0;
     updateTimer1();
