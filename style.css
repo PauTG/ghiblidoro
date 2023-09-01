@@ -95,7 +95,7 @@ body {
 
 
 .totoro {
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 
@@ -190,7 +190,7 @@ button:hover {
   display: block;
   line-height: 2.75em;
   height: 3em;
-  padding: 0 1.618em;
+  padding: 0 1em;
   border-right: 0.125rem;
   cursor: pointer;
   top: 0;
@@ -250,23 +250,23 @@ a:visited {
 
 @media only screen and (min-width: 1px) and (max-width: 971px) {
   .container{
-    width: 60vw;
-    height: 40vh;
+    width: 90vw;
+    height: 45vh;
     object-fit: cover;
     justify-content:space-between;
     font-size: 7px;
     padding: 5px;
     align-items: center;
     overflow: hidden;
-    margin-top: 200px;
+    margin-top: 100px;
 
   }
 
-  img{
-    margin-top: 25px;
-  }
+ .totoro{
+  width: 60px;
+  margin-top: 40px;
+ }
   
-
 
 
   .tab-content{
@@ -280,13 +280,29 @@ a:visited {
   }
 
   .tab-label{
-    font-size: 17px;
+    font-size: 13px;
     text-align: center;
   }
 
+  label{ 
+    padding: 0px;
+    margin: 0px;
+  }
   .wrapper{
-    margin-top: 15px;
+    margin-top: 14px;
     display: flex;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+  #timer{
+    font-size: 35px;
+  }
+  #buttons{
+    font-size: 35px;
+    margin: 5px;
+    padding: 5px;
   }
 
   .tabs{
