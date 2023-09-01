@@ -388,6 +388,9 @@ a:visited {
     margin-top: 14 0px;
     display: flex;
     margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 
   .h1 {
@@ -396,6 +399,9 @@ a:visited {
   }
   #timer,#timer1{
     font-size: 35px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   #buttons, #buttons1{
     font-size: 35px;
