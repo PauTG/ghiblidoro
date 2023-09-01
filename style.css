@@ -353,8 +353,9 @@ a:visited {
   .divTotoro{
     margin-top: 20px;
     margin-bottom: 30px;
-    top: 10px;
+    top: 15px;
     animation-fill-mode: forwards;
+    justify-content: center;
   }
  .totoro{
   width:80px;
