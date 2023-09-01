@@ -269,9 +269,10 @@ a:visited {
   }
 
 
- .totoro{
+
+ img{
   width: 80px;
-  margin-top: 80px;
+  margin-top: 60px;
   position: relative;
   -webkit-animation: normal;
   animation: normal;
