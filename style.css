@@ -338,7 +338,7 @@ a:visited {
 
  .totoro{
   margin: 30px 0;
-  top: 80px;
+  top: 90px;
  }
   .tab-content{
     font-size: 10px;
@@ -366,6 +366,7 @@ a:visited {
 
   h1 {
     font-size: 20px;
+    margin-top: 20px;
   }
   #timer,#timer1{
     font-size: 35px;
