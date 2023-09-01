@@ -296,10 +296,10 @@ a:visited {
   h1 {
     font-size: 20px;
   }
-  #timer{
+  #timer,#timer1{
     font-size: 35px;
   }
-  #buttons{
+  #buttons, #buttons1{
     font-size: 35px;
     margin: 5px;
     padding: 5px;
