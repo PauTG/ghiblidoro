@@ -106,7 +106,7 @@ body {
   justify-content: center;
 }
 
-h1 {
+.h1 {
   color: black;
   font-size: 30px;
 }
@@ -313,16 +313,15 @@ a:visited {
     text-align: center;
     align-items: center;
     justify-content: center;
-
-
   }
 
   .h1 {
-    font-size: 20px;
+    font-size: 30px auto;
+    color: black;
   }
 
   .timer1{
-    font-size: 35px;
+    font-size: 15px;
     text-align: center;
     align-items: center;
     justify-content: center;
