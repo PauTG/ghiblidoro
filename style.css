@@ -272,10 +272,10 @@ a:visited {
     object-fit: cover;
     justify-content:space-between;
     font-size: 7px;
-    padding: 5px;
+    padding: 10px;
     align-items: center;
     overflow: hidden;
-    margin-top: 80px auto;
+    margin: 80px auto;
     text-align: center;
   }
 
