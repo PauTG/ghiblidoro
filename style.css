@@ -271,8 +271,8 @@ a:visited {
 
  .totoro{
   width: 80px;
-  margin-top: 40px;
-  position: relative;
+  margin-top: 20px;
+  
   -webkit-animation: normal;
   animation: normal;
  }
