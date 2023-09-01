@@ -334,7 +334,9 @@ a:visited {
     overflow: hidden;
     margin-top: 10px;
   }
-
+ .totoro{
+  margin-top: 30px;
+ }
   .tab-content{
     font-size: 10px;
     font-size: 7px;
