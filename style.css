@@ -349,16 +349,21 @@ a:visited {
     align-items: center;
     overflow: hidden;
     margin-top: 20px;
+    text-align: center;
   }
   .divTotoro{
     margin-top: 30px;
     top: 30px;
     animation-fill-mode: forwards;
+    text-align: center;
+    align-items: center;
     justify-content: center;
   }
  .totoro{
   width: 100px;
   height: 90px;
+  text-align: center;
+  align-items: center;
   justify-content: center;
 
  }
@@ -371,6 +376,7 @@ a:visited {
     justify-content: center;
     padding: 10px;
     display: flex;
+    align-items: center;
   }
 
   .tab-label{
