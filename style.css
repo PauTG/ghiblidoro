@@ -253,6 +253,9 @@ a:visited {
 
 
 @media only screen and (min-width: 250px) and (max-width: 971px) {
+  *{
+    position: -webkit-sticky;
+  }
   .container{
     width: 90vw;
     height: 45vh;
@@ -330,6 +333,9 @@ a:visited {
 }
 
 @media only screen and (min-width: 390px) and (max-width: 844px){
+  *{
+    position: -webkit-sticky;
+  }
   .container{
     width: 90vw;
     height: 45vh;
