@@ -378,5 +378,6 @@ a:visited {
   .tabs{
     display: flex;
     white-space: nowrap;
+    margin: 20px;
   }
 }
