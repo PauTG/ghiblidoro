@@ -258,10 +258,7 @@ a:visited {
 
 
 @media only screen and (min-width: 250px) and (max-width: 971px) {
-  *{
-    position: -webkit-sticky;
-    align-items: center;
-  }
+
 
   body{
     text-align: center;
@@ -294,7 +291,7 @@ a:visited {
  .totoro{
   width: 100px;
   height: 90px;
-  margin-top: 10vh;
+  margin-top: 30px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -349,10 +346,7 @@ a:visited {
 }
 
 @media only screen and (min-width: 390px) and (max-width: 844px){
-  *{
-    position: -webkit-sticky;
-    align-items: center;
-  }
+
   body{
     body{
       text-align: center;
