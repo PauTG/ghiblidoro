@@ -1,6 +1,9 @@
 const timerDisplay = document.getElementById('timer');
 const startButton = document.getElementById('start');
 const resetButton = document.getElementById('reset');
+const btnDescanso = document.getElementById('descanso');
+const btnConcentrarse = document.getElementById('concentrarse');
+
 
 let timeLeft = 1500;
 let isRunning = false;
@@ -53,9 +56,28 @@ function resetTimer() {
     updateTimer();
 }
 
+function descansoTime(){
+    clearInterval(timerInterval);
+    isRunning = false;
+    startButton.textContent = 'Start';
+    timeLeft = 600;
+    pomodoroCount = 0;
+    updateTimer();
+}
 
+function concentracionTime(){
+    clearInterval(timerInterval);
+    isRunning = false;
+    startButton.textContent = 'Start';
+    timeLeft = 1500;
+    pomodoroCount = 0;
+    updateTimer();
+}
+
+btnDescanso.addEventListener('click', descansoTime);
 startButton.addEventListener('click', startTimer);
 resetButton.addEventListener('click', resetTimer);
+btnConcentrarse.addEventListener('click', concentracionTime);
 
 updateTimer();
 

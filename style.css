@@ -1,4 +1,4 @@
-*{
+* {
   font-family: 'Ghibli';
 }
 
@@ -46,7 +46,8 @@
 #icon {
   cursor: pointer;
 }
-video{
+
+video {
   overflow: hidden;
   position: relative;
   object-fit: cover;
@@ -59,6 +60,7 @@ video{
   bottom: 0;
   z-index: -1;
 }
+
 .video {
   width: 100%;
   position: absolute;
@@ -91,6 +93,7 @@ body {
   justify-content: center;
   margin: 50px auto;
   align-items: center;
+  position: relative;
 }
 
 
@@ -112,8 +115,7 @@ body {
   font-size: 30px;
 }
 
-#timer,
-#timer1 {
+#timer {
   font-size: 70px;
   color: black;
   margin-top: 10px;
@@ -121,8 +123,7 @@ body {
 
 
 
-#buttons,
-#buttons1 {
+#buttons {
   margin: 20px;
   padding: 15px;
   font-size: 50px;
@@ -211,14 +212,13 @@ button:hover {
 
 .tab-content {
   height: 80px;
-  position: absolute;
+
   z-index: 1;
   top: 2.75em;
   left: 0;
   padding: 1rem;
   color: #2c3e50;
   border-bottom: 0.25rem;
-  opacity: 0;
   transition: all 0.35s;
   display: flex;
   width: 93%;
@@ -226,9 +226,15 @@ button:hover {
   text-align: center;
   margin-top: 50px;
   display: block;
-  
+
 }
 
+.titulos {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
 
 
 .tab-switch:checked+label+.tab-content {
@@ -254,17 +260,22 @@ a:visited {
 
 
 
-@media only screen and (min-width: 190px) and (max-width: 990px){
-  *{
-    cursor:pointer; cursor: hand;
+@media only screen and (min-width: 190px) and (max-width: 990px) {
+  * {
+    cursor: pointer;
+    cursor: hand;
+    align-items: center;
+    justify-content: center;
   }
-  body{
-    body{
+
+  body {
+    body {
       text-align: center;
       align-items: center;
     }
   }
-  .container{
+
+  .container {
     width: 90vw;
     height: 45vh;
     object-fit: cover;
@@ -277,36 +288,44 @@ a:visited {
     overflow: hidden;
   }
 
- .totoro{
-  width: 100px;
-  height: 90px;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  top: 20px;
-  margin-top: 30px;
+  .totoro {
+    width: 90px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 20px;
 
- }
-  .tab-content{
+  }
+  .titulos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .tab-content {
     font-size: 10px;
-    margin-top: 10px;
-    top: 30px;
     text-align: center;
     justify-content: center;
     padding: 10px;
-    display: flex;
     align-items: center;
-    display: block;
+    margin: 20px;
 
   }
 
-  .tab-label{
+  .tab-label {
     text-align: center;
     display: flex;
+
+  }
+
+  #timer {
+    font-size: 50px;
   }
 
 
-  .wrapper{
+  .wrapper {
     display: flex;
     text-align: center;
     align-items: center;
@@ -319,10 +338,11 @@ a:visited {
     color: black;
   }
 
-  #buttons, #buttons1{
+  #buttons {
     font-size: 35px;
   }
-  #tab-1, #tab-2{
+
+  #tab {
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -332,9 +352,11 @@ a:visited {
   }
 
 
-  .tabs{
+  .tabs,
+  .tab {
     display: flex;
     white-space: nowrap;
-    
+    flex-direction: column;
+
   }
 }
