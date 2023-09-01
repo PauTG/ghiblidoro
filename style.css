@@ -333,12 +333,11 @@ a:visited {
     align-items: center;
     overflow: hidden;
     margin-top: 10px;
-    margin-bottom: 30px;
   }
 
  .totoro{
   margin: 30px 0;
-  width: 90px;
+  width: 50px;
   top: 40px;
  }
   .tab-content{
