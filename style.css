@@ -89,13 +89,20 @@ body {
   color: black;
   justify-content: center;
   margin: 50px auto;
-  
 }
 
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 .totoro {
-  width: 80px;
+  width: 100px;
   height: auto;
 }
 
@@ -259,11 +266,20 @@ a:visited {
     align-items: center;
     overflow: hidden;
     margin-top: 100px;
+  }
 
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 
  .totoro{
-  width: 60px;
+  width: 80px;
   margin-top: 40px;
  }
   
@@ -280,7 +296,7 @@ a:visited {
   }
 
   .tab-label{
-    font-size: 13px;
+    font-size: 17px;
     text-align: center;
   }
 
