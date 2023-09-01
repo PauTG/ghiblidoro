@@ -98,8 +98,8 @@ body {
 
 
 .totoro {
-  width: 100px;
-  height: auto;
+  width: 17vh;
+  height: 12vh;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -289,8 +289,8 @@ a:visited {
   }
 
   .totoro {
-    width: 90px;
-    height: 80px;
+    width: 18vh;
+    height: 13vh;
     text-align: center;
     align-items: center;
     justify-content: center;
