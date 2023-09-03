@@ -32,7 +32,7 @@
   font-size: 20px;
   color: white;
   position: relative;
-  filter: drop-shadow(5px 5px 25px #ffffff);
+  filter: drop-shadow(5px 5px 15px #ffffff);
 }
 
 .play {
@@ -177,14 +177,12 @@ button {
   border-color: rgba(255, 255, 255, 0.551) ; 
   border-radius: 100px;
   border-bottom-color: transparent;
-  border-style:dotted
+  border-style:dotted;
  }
 
 button:hover {
   background-color: #333;
 }
-
-
 
 .container::before .container::after {
   content: "";
@@ -205,7 +203,6 @@ button:hover {
 .container .timer-buttons button:last-child {
   margin-right: 0;
 }
-
 
 .wrapper {
   max-width: 100%;
@@ -252,7 +249,6 @@ button:hover {
 
 .tab-content {
   height: 80px;
-
   z-index: 1;
   top: 2.75em;
   left: 0;
@@ -266,7 +262,6 @@ button:hover {
   text-align: center;
   margin-top: 50px;
   display: block;
-
 }
 
 .titulos {
@@ -303,14 +298,15 @@ a:visited {
   color: white;
 }
 
-
-
 @media only screen and (min-width: 190px) and (max-width: 990px) {
   * {
     cursor: pointer;
     cursor: hand;
     align-items: center;
     justify-content: center;
+  }
+  .header{
+    filter: drop-shadow(5px 5px 15px #ffffff);
   }
 
   body {
