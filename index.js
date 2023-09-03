@@ -12,11 +12,9 @@ let timerInterval;
 let pomodoroCount = 0;
 
 window.addEventListener('load', function() {
-  // Oculta el spinner cuando la página esté completamente cargada
   var spinner = document.getElementById('spinner');
   spinner.style.display = 'none';
 
-  // Muestra el contenido principal
   var contenido = document.getElementById('contenido');
   contenido.style.display = 'block';
 });
@@ -77,7 +75,6 @@ function descansoTime() {
   timeLeft = 600;
   pomodoroCount = 0;
   updateTimer();
-  //totoro1.src = "img/totoro2.gif";
   totoro1.src = getRandom();
 }
 
@@ -88,7 +85,6 @@ function concentracionTime() {
   timeLeft = 1500;
   pomodoroCount = 0;
   updateTimer();
-  //totoro1.src = "img/totoro.gif";
   totoro1.src = getRandom();
 }
 

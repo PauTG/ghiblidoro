@@ -77,6 +77,16 @@ body {
   justify-content: center;
   letter-spacing: 0.07rem;
 }
+ #contenido{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+ }
+
+ main{
+  flex-grow: 1;
+ }
 
 .spinner {
   border: 4px solid rgba(255, 255, 255, 0.3);
@@ -89,7 +99,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none; /* Inicialmente oculto */
+  display: none; 
 }
 
 @keyframes spin {
@@ -269,6 +279,7 @@ button:hover {
   font-size: 20px;
   font-family: 'Ghibli2';
   color: white;
+  padding: 10px;
 }
 
 .portafolio {
