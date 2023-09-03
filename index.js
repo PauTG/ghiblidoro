@@ -6,9 +6,6 @@ const btnConcentrarse = document.getElementById("concentrarse");
 const totoro1 = document.getElementById("totoro");
 const totoro2 = document.getElementById("totoroDesc");
 
-const totoroHome = encodeURI("/img/totoro.gif");
-const totoroDescanso = encodeURI("/img/totoro2.gif");
-const Image = document.getElementById("imagen");
 
 const popurriImagen = [
   "https://media4.giphy.com/media/mEhI4VFNXGk39Npvtx/giphy.gif?cid=ecf05e47mos29e9qyres9u4qb64lamrc4wyp3605xu97tj5k&ep=v1_gifs_related&rid=giphy.gif&ct=s",

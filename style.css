@@ -75,6 +75,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
+  letter-spacing: 0.07rem;
 }
 
 .container {
@@ -251,10 +252,11 @@ button:hover {
   color: white;
 }
 
-a {
+.portafolio {
   text-decoration: none;
   color: white;
-  text-shadow: rgba(255, 255, 255, 0.749) 1px 0 1px;
+  text-shadow: rgba(255, 255, 255, 0.749) 1px 0 9px;
+  letter-spacing: 0.090rem;
 }
 
 a:visited {
