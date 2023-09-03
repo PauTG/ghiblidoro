@@ -320,9 +320,6 @@ a:visited {
     margin: 0;
    }
   
-   main{
-    flex-grow: 1;
-   }
 
   .container {
     width: 90vw;
