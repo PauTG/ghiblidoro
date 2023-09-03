@@ -98,6 +98,21 @@ function getRandom() {
   return randomUrl;
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("background-video");
+
+  if (localStorage.getItem("videoCached")) {
+      video.appendChild(localStorage.getItem("videoCached"));
+  } else {
+      var source = document.createElement("source");
+      source.src = "img/GBV.mp4";
+      source.type = "video/mp4";
+      video.appendChild(source);
+      localStorage.setItem("videoCached", video.innerHTML);
+  }
+});
+
+
 const popurriImagen = [
   "https://media4.giphy.com/media/mEhI4VFNXGk39Npvtx/giphy.gif?cid=ecf05e47mos29e9qyres9u4qb64lamrc4wyp3605xu97tj5k&ep=v1_gifs_related&rid=giphy.gif&ct=s",
   "https://media2.giphy.com/media/VD43RdK9ozWJ6cllgy/giphy.gif?cid=ecf05e47j8td01xnao1zu18sg86wd4dq8yhnpvpqrmnu30bz&ep=v1_stickers_search&rid=giphy.gif&ct=s",

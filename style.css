@@ -32,6 +32,7 @@
   font-size: 20px;
   color: white;
   position: relative;
+  filter: drop-shadow(5px 5px 15px #ffffff);
 }
 
 .play {
@@ -76,6 +77,7 @@ body {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.07rem;
+
 }
  #contenido{
   display: flex;
@@ -151,7 +153,12 @@ body {
   margin-top: 10px;
 }
 
-
+.play1{
+  height: 20px;
+  width: 15px;
+  align-items: center;
+  justify-content: center;
+}
 
 #buttons {
   margin: 20px;
@@ -163,12 +170,15 @@ button {
   padding: 10px 20px;
   font-size: 18px;
   background-color: #0000;
-  border: none;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 30px;
-}
+  border-color: rgba(255, 255, 255, 0.551) ; 
+  border-radius: 100px;
+  border-bottom-color: transparent;
+  border-style:dotted
+ }
 
 button:hover {
   background-color: #333;
@@ -279,7 +289,7 @@ button:hover {
   font-size: 20px;
   font-family: 'Ghibli2';
   color: white;
-  padding: 10px;
+  padding: 150px;
 }
 
 .portafolio {
@@ -304,11 +314,19 @@ a:visited {
   }
 
   body {
-    body {
       text-align: center;
       align-items: center;
-    }
   }
+  #contenido{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+   }
+  
+   main{
+    flex-grow: 1;
+   }
 
   .container {
     width: 90vw;
@@ -393,5 +411,12 @@ a:visited {
     white-space: nowrap;
     flex-direction: column;
 
+  }
+
+  .footer{
+    padding: 90px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }
