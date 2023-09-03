@@ -32,7 +32,7 @@
   font-size: 20px;
   color: white;
   position: relative;
-  filter: drop-shadow(5px 5px 15px #ffffff);
+  filter: drop-shadow(5px 5px 25px #ffffff);
 }
 
 .play {
@@ -101,6 +101,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  filter: drop-shadow(5px 5px 15px #ffffff);
 }
 
 @keyframes spin {

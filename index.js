@@ -102,7 +102,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var video = document.getElementById("background-video");
 
   if (localStorage.getItem("videoCached")) {
-      video.appendChild(localStorage.getItem("videoCached"));
+      video.innerHTML = (localStorage.getItem("videoCached"));
+      
   } else {
       var source = document.createElement("source");
       source.src = "img/GBV.mp4";
