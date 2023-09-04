@@ -338,7 +338,7 @@ a:visited {
     font-size: 7px;
     padding: 10px;
     align-items: center;
-    margin: 30px auto;
+    margin: 30px;
     text-align: center;
     top: 30px;
     display: flex;
@@ -397,8 +397,8 @@ a:visited {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin:  15px;
-    padding: 15px;
+    margin:  15px auto;
+    padding: 15px auto;
     position: relative;
 
   }
