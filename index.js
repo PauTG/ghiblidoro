@@ -5,6 +5,7 @@ const btnDescanso = document.getElementById("descanso");
 const btnConcentrarse = document.getElementById("concentrarse");
 const totoro1 = document.getElementById("totoro");
 const totoro2 = document.getElementById("totoroDesc");
+const musica = document.getElementById("ghibliSong")
 
 let timeLeft = 1500;
 let isRunning = false;
@@ -133,5 +134,8 @@ btnDescanso.addEventListener("click", descansoTime);
 startButton.addEventListener("click", startTimer);
 resetButton.addEventListener("click", resetTimer);
 btnConcentrarse.addEventListener("click", concentracionTime);
-
+musica.addEventListener("ended", function() {
+  musica.currentTime = 0; // Reinicia la reproducción al principio
+ musica.play(); // Reproduce de nuevo
+});
 updateTimer();

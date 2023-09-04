@@ -79,16 +79,17 @@ body {
   letter-spacing: 0.07rem;
 
 }
- #contenido{
+
+#contenido {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
- }
+}
 
- main{
+main {
   flex-grow: 1;
- }
+}
 
 .spinner {
   border: 4px solid rgb(255, 255, 255);
@@ -105,8 +106,13 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: translate(-50%, -50%) rotate(0deg); }
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .container {
@@ -150,7 +156,7 @@ body {
   margin-top: 10px;
 }
 
-.play1{
+.play1 {
   height: 20px;
   width: 15px;
   align-items: center;
@@ -171,11 +177,11 @@ button {
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 30px;
-  border-color: rgba(255, 255, 255, 0.551) ; 
+  border-color: rgba(255, 255, 255, 0.551);
   border-radius: 100px;
   border-bottom-color: transparent;
-  border-style:dotted;
- }
+  border-style: dotted;
+}
 
 button:hover {
   background-color: #333;
@@ -204,9 +210,9 @@ button:hover {
 .wrapper {
   max-width: 100%;
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .tabs::before,
@@ -261,7 +267,7 @@ button:hover {
   margin-top: 50px;
 }
 
-b{
+b {
   font-size: 23px;
 }
 
@@ -308,28 +314,29 @@ a:visited {
     overflow: hidden;
   }
 
-  .header{
+  .header {
     filter: drop-shadow(5px 5px 5px #ffffff80);
   }
 
   body {
-      text-align: center;
-      align-items: center;
+    text-align: center;
+    align-items: center;
   }
-  #contenido{
+
+  #contenido {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-   }
+  }
 
-  #background-video{
+  #background-video {
     padding: 0;
     overflow: hidden;
     width: 100%;
     height: 100%;
-  } 
-  
+  }
+
 
   .container {
     width: 80vw;
@@ -343,36 +350,39 @@ a:visited {
     text-align: center;
     top: 20px;
     display: flex;
-  
+
   }
 
-  .totoro {
-    width: 120px ;
-    height: 90px;
+ #totoro{
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 5px;
     padding: 5px;
 
   }
-  .titulos{
+
+  .titulos {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    top: 15px auto;
-    gap: 15px auto;
+    top: 15px;
+    gap: 15px;
   }
-  b{
+
+  b {
     font-size: 19px;
   }
 
   .tab-content {
     text-align: center;
-    justify-content: center;
     align-items: center;
-    padding: 10px;
+    display: flex;
+    padding: 1px;
+    width: auto;
+    height: auto;
+    top: 60px;
   }
 
   .tab-label {
@@ -383,13 +393,14 @@ a:visited {
 
   #timer {
     font-size: 50px;
-    margin:  auto;
+    margin: auto;
     align-items: center;
   }
-  .timer1{
+
+  .timer1 {
     position: relative;
-    margin: 5px ;
-    padding: 5px ;
+    margin: 1px;
+    padding: 1px;
     align-items: center;
     justify-content: space-between;
     top: 30px;
@@ -401,9 +412,8 @@ a:visited {
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center;
     cursor: pointer;
-    margin:  15px auto;
+    margin: 15px auto;
     padding: 15px auto;
     position: relative;
 
@@ -426,19 +436,17 @@ a:visited {
     justify-content: center;
     margin: 10px;
     padding: 10px;
-    position: relative;
   }
 
 
-  .tabs,
-  .tab {
+  .tabs {
     display: flex;
     white-space: nowrap;
     flex-direction: column;
 
   }
 
-  .footer{
+  .footer {
     padding: 33px;
     text-align: center;
     justify-content: center;
