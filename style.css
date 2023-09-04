@@ -33,7 +33,7 @@
   color: white;
   position: relative;
   filter: drop-shadow(5px 5px 5px #ffffffb5);
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .play {
@@ -60,6 +60,7 @@ video {
   top: 0;
   bottom: 0;
   z-index: -1;
+  image-rendering: pixelated;
 }
 
 .video {

@@ -19,78 +19,76 @@
 <body>
     <div id="contenido">
         <div class="video">
-            <video id="background-video" type="video" autoplay="true" muted="true" loop="true" "></video>
-    </div>
-    <header>
-        <nav class=" head">
-                <div class="header">
-                    <div>
-                        <img class="fotonav" src="./img/sghibli.png" alt="foto nav">
-                    </div>
-                    <div>
-                        <img class="play" src="./img/play.png" id="icon">
-                    </div>
-                </div>
-                <audio id="ghibliSong">
-                    <source src="img/ghib3r.mp3" type="audio/mp3">
-                </audio>
-                <script>
-                    var ghibliSong = document.getElementById("ghibliSong");
-                    var icon = document.getElementById("icon");
+            <video id="background-video" type="video" autoplay="true" muted="true" loop="true"></video>
+        </div>
+        <div class="header">
+            <div>
+                <img class="fotonav" src="./img/sghibli.png" alt="foto nav">
+            </div>
+            <div>
+                <img class="play" src="./img/play.png" id="icon">
+            </div>
+        </div>
+        <audio id="ghibliSong">
+            <source src="img/ghib3r.mp3" type="audio/mp3">
+        </audio>
+        <script>
+            var ghibliSong = document.getElementById("ghibliSong");
+            var icon = document.getElementById("icon");
 
-                    icon.onclick = function () {
-                        if (ghibliSong.paused) {
-                            ghibliSong.play();
-                            icon.src = "img/pause.png";
-                        }
-                        else {
-                            ghibliSong.pause();
-                            icon.src = "img/play.png";
-                        }
-                    }
-                </script>
-                </nav>
-                </header>
-                <main>
+            icon.onclick = function () {
+                if (ghibliSong.paused) {
+                    ghibliSong.play();
+                    icon.src = "img/pause.png";
+                }
+                else {
+                    ghibliSong.pause();
+                    icon.src = "img/play.png";
+                }
+            }
+        </script>
+        </nav>
+        </header>
+        <main>
 
-                    <div class="container">
-                        <div class="wrapper">
-                            <div class="tabs">
-                                <div id="spinner" class="spinner"></div>
-                                <div class="tab">
-                                    <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
-                                    <div class="titulos">
-                                        <label for="tab-1" id="concentrarse" class="tab-label"><b>A
-                                                concentrarse</b></label>
-                                        <label for="tab-2" id="descanso" class="tab-label"><b>Descanso</b></label>
-                                    </div>
-                                    <div class="tab-content">
-                                        <img id="totoro" class="totoro" type="image"
-                                            src="https://media4.giphy.com/media/jOgrMfJBRG6vvQdBNr/giphy.gif?cid=ecf05e47j8td01xnao1zu18sg86wd4dq8yhnpvpqrmnu30bz&ep=v1_stickers_search&rid=giphy.gif&ct=s"
-                                            alt="totoro">
-                                    </div>
-                                    <div class="timer1">
-                                        <div id="timer"> 25:00 </div>
-                                        <div id="buttons">
-                                            <button id="start"> Start </button>
-                                            <button id="reset"> Reset </button>
-                                        </div>
-                                    </div>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="tabs">
+                        <div id="spinner" class="spinner"></div>
+                        <div class="tab">
+                            <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+                            <div class="titulos">
+                                <label for="tab-1" id="concentrarse" class="tab-label"><b>A
+                                        concentrarse</b></label>
+                                <label for="tab-2" id="descanso" class="tab-label"><b>Descanso</b></label>
+                            </div>
+                            <div class="tab-content">
+                                <img id="totoro" class="totoro" type="image"
+                                    src="https://media4.giphy.com/media/jOgrMfJBRG6vvQdBNr/giphy.gif?cid=ecf05e47j8td01xnao1zu18sg86wd4dq8yhnpvpqrmnu30bz&ep=v1_stickers_search&rid=giphy.gif&ct=s"
+                                    alt="totoro">
+                            </div>
+                            <div class="timer1">
+                                <div id="timer"> 25:00 </div>
+                                <div id="buttons">
+                                    <button id="start"> Start </button>
+                                    <button id="reset"> Reset </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </main>
-                <script src="./index.js"></script>
+                </div>
+            </div>
+        </main>
+        <script src="./index.js"></script>
 
 
-                <footer>
-                    <div class="footer">
-                        <p> Desarrollado por <a class="portafolio" target="_blank"
-                                href="https://paulag.dev.ar/"><b>Pawli</b></a></p>
-                    </div>
-                </footer>
-        </div>
+        <footer>
+            <div class="footer">
+                <p> Desarrollado por <a class="portafolio" target="_blank"
+                        href="https://paulag.dev.ar/"><b>Pawli</b></a></p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 
