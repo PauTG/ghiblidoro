@@ -129,17 +129,14 @@ body {
 }
 
 
-.totoro {
+#totoro {
   width: 20vh;
   height: 14vh;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-align: center;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .h1 {
@@ -260,8 +257,12 @@ button:hover {
   width: 93%;
   justify-content: center;
   text-align: center;
+  align-items: center;
   margin-top: 50px;
-  display: block;
+}
+
+b{
+  font-size: 23px;
 }
 
 .titulos {
@@ -270,6 +271,7 @@ button:hover {
   text-align: center;
   justify-content: space-around;
   text-shadow: white;
+  gap: 20px;
 }
 
 
@@ -360,14 +362,17 @@ a:visited {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    top: 15px;
+    top: 15px auto;
+    gap: 15px auto;
+  }
+  b{
+    font-size: 19px;
   }
 
   .tab-content {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 10px;
     padding: 10px;
   }
 
