@@ -377,6 +377,10 @@ a:visited {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin: 10px auto;
+    padding: 10px auto;
+    position: relative;
+
   }
 
   .h1 {
@@ -407,7 +411,7 @@ a:visited {
   }
 
   .footer{
-    padding: 50px;
+    padding: 35px;
     text-align: center;
     justify-content: center;
     align-items: center;
