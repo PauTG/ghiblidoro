@@ -341,16 +341,18 @@ a:visited {
     margin: 30px auto;
     text-align: center;
     top: 30px;
+    display: flex;
   
   }
 
-  #totoro {
-    width: 18vh;
-    height: 13vh;
+  .totoro {
+    width: 250px auto;
+    height: 170px auto;
     text-align: center;
     align-items: center;
     justify-content: center;
-    top: 30px;
+    margin: auto;
+    padding: auto;
 
   }
   .titulos{
@@ -365,10 +367,11 @@ a:visited {
     font-size: 10px;
     text-align: center;
     justify-content: center;
-    padding: 10px;
     align-items: center;
-    margin: 10px auto;
-
+    margin: 5px auto;
+    padding: 5px auto;
+    width: auto ;
+    height: auto;
   }
 
   .tab-label {
@@ -379,12 +382,15 @@ a:visited {
 
   #timer {
     font-size: 50px;
+    margin: 15px auto;
+    align-items: center;
   }
   .timer1{
     position: relative;
     margin: auto;
     padding: auto;
-    top: 15px;
+    align-items: center;
+    justify-content: space-between;
   }
 
 
@@ -407,6 +413,8 @@ a:visited {
 
   #buttons {
     font-size: 35px;
+    margin: auto;
+    padding: auto;
   }
 
   #tab {
