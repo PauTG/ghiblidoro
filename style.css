@@ -32,7 +32,8 @@
   font-size: 20px;
   color: white;
   position: relative;
-  filter: drop-shadow(5px 5px 15px #ffffff);
+  filter: drop-shadow(5px 5px 5px #ffffffb5);
+  margin: 3px;
 }
 
 .play {
@@ -40,7 +41,6 @@
   margin-right: 6%;
   display: flex;
   align-items: center;
-  filter: drop-shadow(2px 2px 6px #ffffff96);
 
 }
 
@@ -303,14 +303,13 @@ a:visited {
 @media only screen and (min-width: 190px) and (max-width: 990px) {
   * {
     cursor: pointer;
-    cursor: hand;
     align-items: center;
     justify-content: center;
     overflow: hidden;
   }
 
   .header{
-    filter: drop-shadow(5px 5px 15px #ffffff);
+    filter: drop-shadow(5px 5px 5px #ffffff80);
   }
 
   body {
@@ -393,6 +392,8 @@ a:visited {
     padding: 5px ;
     align-items: center;
     justify-content: space-between;
+    top: 30px;
+    align-items: center;
   }
 
 
@@ -419,11 +420,10 @@ a:visited {
     padding: 5px;
   }
 
-  #tab {
+  .tab {
     text-align: center;
     align-items: center;
     justify-content: center;
-    top: 10px;
     margin: 10px;
     padding: 10px;
     position: relative;
