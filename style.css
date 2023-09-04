@@ -136,13 +136,13 @@ main {
 
 
 #totoro {
-  width: 20vh;
-  height: 14vh;
+  width: 22vh;
+  height: 16vh;
   transition: all 0.3s ease-in-out;
   text-align: center;
   align-items: center;
   justify-content: center;
-  position: relative;
+  display: flex;
 }
 
 .h1 {
@@ -251,20 +251,16 @@ button:hover {
 }
 
 .tab-content {
-  height: 80px;
   z-index: 1;
-  top: 2.75em;
-  left: 0;
-  padding: 1rem;
+  padding: 10px;
   color: #2c3e50;
   border-bottom: 0.25rem;
   transition: all 0.35s;
   display: flex;
-  width: 93%;
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-top: 50px;
+  margin: 10px;
 }
 
 b {
@@ -357,8 +353,8 @@ a:visited {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    margin: 5px;
-    padding: 5px;
+    width: 160px;
+    height: auto;
 
   }
 
@@ -382,7 +378,9 @@ a:visited {
     padding: 1px;
     width: auto;
     height: auto;
-    top: 60px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
   }
 
   .tab-label {
@@ -393,12 +391,11 @@ a:visited {
 
   #timer {
     font-size: 50px;
-    margin: auto;
     align-items: center;
+    margin-top: 10px;
   }
 
   .timer1 {
-    position: relative;
     margin: 1px;
     padding: 1px;
     align-items: center;
