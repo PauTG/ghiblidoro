@@ -99,7 +99,7 @@ function getRandom() {
   return randomUrl;
 }
 
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
   var video = document.getElementById("background-video");
 
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
       video.appendChild(source);
       localStorage.setItem("videoCached", video.innerHTML);
   }
-}); 
+}); */
 
 
 const popurriImagen = [
