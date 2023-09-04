@@ -1,6 +1,5 @@
 * {
   font-family: 'Ghibli';
-  background-color: white;
 }
 
 
@@ -61,7 +60,6 @@ video {
   top: 0;
   bottom: 0;
   z-index: -1;
-  image-rendering: pixelated;
 }
 
 .video {
@@ -79,6 +77,8 @@ body {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.07rem;
+  background-image: url(./img/wallpaper.jpg);
+  background-size: cover;
 
 }
 
