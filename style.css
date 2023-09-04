@@ -344,13 +344,13 @@ a:visited {
   
   }
 
-  .totoro {
+  #totoro {
     width: 18vh;
     height: 13vh;
     text-align: center;
     align-items: center;
     justify-content: center;
-    top: 20px;
+    top: 30px;
 
   }
   .titulos{
@@ -358,6 +358,7 @@ a:visited {
     align-items: center;
     text-align: center;
     justify-content: space-around;
+    top: 15px;
   }
 
   .tab-content {
@@ -381,8 +382,9 @@ a:visited {
   }
   .timer1{
     position: relative;
-    margin: 10px auto;
-    padding: 10px auto;
+    margin: auto;
+    padding: auto;
+    top: 15px;
   }
 
 
@@ -411,7 +413,7 @@ a:visited {
     text-align: center;
     align-items: center;
     justify-content: center;
-    top: 10px;
+    top: 20px;
     margin: 2px;
     position: relative;
   }
