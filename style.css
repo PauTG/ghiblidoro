@@ -1,5 +1,7 @@
 * {
   font-family: 'Ghibli';
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -65,9 +67,19 @@ video {
 .video {
   width: 100%;
   position: relative;
-  margin: -10px;
   padding: 0;
   object-fit: cover;
+  pointer-events: none;
+  cursor: default;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+}
+
+iframe{
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -446,5 +458,18 @@ a:visited {
     text-align: center;
     justify-content: center;
     align-items: center;
+  } 
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video iframe {
+    height: calc(56.25vw + 300px);
+    margin-top: -300px;
+  }
+}
+    
+@media (max-aspect-ratio: 16/9) {
+  .video iframe {
+    width: 177.78vh;
   }
 }
