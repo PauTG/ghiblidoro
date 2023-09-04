@@ -369,6 +369,11 @@ a:visited {
   #timer {
     font-size: 50px;
   }
+  .timer1{
+    position: relative;
+    margin: 10px auto;
+    padding: 10px auto;
+  }
 
 
   .wrapper {
@@ -411,7 +416,7 @@ a:visited {
   }
 
   .footer{
-    padding: 35px;
+    padding: 33px;
     text-align: center;
     justify-content: center;
     align-items: center;
