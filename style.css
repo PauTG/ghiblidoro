@@ -130,8 +130,8 @@ body {
 
 
 .totoro {
-  width: 17vh;
-  height: 12vh;
+  width: 20vh;
+  height: 14vh;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -346,13 +346,13 @@ a:visited {
   }
 
   .totoro {
-    width: 250px auto;
-    height: 170px auto;
+    width: 120px ;
+    height: 90px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    padding: auto;
+    margin: 5px;
+    padding: 5px;
 
   }
   .titulos{
@@ -364,14 +364,11 @@ a:visited {
   }
 
   .tab-content {
-    font-size: 10px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 5px auto;
-    padding: 5px auto;
-    width: auto ;
-    height: auto;
+    margin: 10px;
+    padding: 10px;
   }
 
   .tab-label {
@@ -382,13 +379,13 @@ a:visited {
 
   #timer {
     font-size: 50px;
-    margin: 15px auto;
+    margin:  auto;
     align-items: center;
   }
   .timer1{
     position: relative;
-    margin: auto;
-    padding: auto;
+    margin: 5px ;
+    padding: 5px ;
     align-items: center;
     justify-content: space-between;
   }
@@ -400,8 +397,8 @@ a:visited {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    margin: 10px auto;
-    padding: 10px auto;
+    margin:  15px;
+    padding: 15px;
     position: relative;
 
   }
@@ -413,16 +410,17 @@ a:visited {
 
   #buttons {
     font-size: 35px;
-    margin: auto;
-    padding: auto;
+    margin: 5px;
+    padding: 5px;
   }
 
   #tab {
     text-align: center;
     align-items: center;
     justify-content: center;
-    top: 20px;
-    margin: 2px;
+    top: 10px;
+    margin: 10px;
+    padding: 10px;
     position: relative;
   }
 
