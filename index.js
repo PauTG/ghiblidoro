@@ -99,20 +99,6 @@ function getRandom() {
   return randomUrl;
 }
 
-/*
-document.addEventListener("DOMContentLoaded", function () {
-  var video = document.getElementById("background-video");
-
-  if (localStorage.getItem("videoCached")) {
-      video.innerHTML = (localStorage.getItem("videoCached"));
-  } else {
-      var source = document.createElement("source");
-      source.src = "img/GBV.mp4";
-      source.type = "video/mp4";
-      video.appendChild(source);
-      localStorage.setItem("videoCached", video.innerHTML);
-  }
-}); */
 
 
 const popurriImagen = [
