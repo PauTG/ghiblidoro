@@ -331,6 +331,11 @@ a:visited {
     align-items: center;
   }
 
+  main {
+    display: flex;
+    align-items: center;
+    height: 75vh;
+  }
   #contenido {
     display: flex;
     flex-direction: column;
@@ -374,7 +379,6 @@ a:visited {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    top: 15px;
     gap: 15px;
   }
 
