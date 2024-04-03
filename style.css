@@ -128,9 +128,9 @@ main {
 }
 
 .container {
-  padding: 10px;
-  width: 70vh;
-  height: auto;
+  padding: 15px;
+  width: 80vh;
+  height: 55vh;
   border-radius: 5px;
   box-shadow: 0 2px 5px;
   background: rgba(255, 255, 255, 0.28);
@@ -220,7 +220,6 @@ button:hover {
 
 .wrapper {
   max-width: 100%;
-  width: 100%;
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -299,7 +298,6 @@ b {
   font-size: 20px;
   font-family: 'Ghibli2';
   color: white;
-  padding: 150px;
 }
 
 .portafolio {
@@ -334,7 +332,7 @@ a:visited {
   main {
     display: flex;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 15%;
   }
   #contenido {
     display: flex;
