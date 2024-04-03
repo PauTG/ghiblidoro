@@ -128,9 +128,9 @@ main {
 }
 
 .container {
-  padding: 50px;
-  width: 600px;
-  height: 400px;
+  padding: 10px;
+  width: 70vh;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0 2px 5px;
   background: rgba(255, 255, 255, 0.28);
@@ -141,7 +141,7 @@ main {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   color: black;
   justify-content: center;
-  margin: 50px auto;
+  margin: 40px auto;
   align-items: center;
   position: relative;
 }
@@ -356,7 +356,6 @@ a:visited {
     align-items: center;
     margin: 2px auto;
     text-align: center;
-    top: 10px;
     display: flex;
 
   }
@@ -407,8 +406,6 @@ a:visited {
   }
 
   .timer1 {
-    margin-top: 1px;
-    padding: 1px;
     align-items: center;
     justify-content: space-between;
     align-items: center;
