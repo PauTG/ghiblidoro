@@ -369,8 +369,8 @@ a:visited {
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    width: 160px;
-    height: auto;
+    width: 90px;
+    height: 70px;
 
   }
 
@@ -391,8 +391,6 @@ a:visited {
     align-items: center;
     display: flex;
     padding: 1px;
-    width: auto;
-    height: auto;
     flex-direction: column;
     justify-content: center;
     margin: 0px;
