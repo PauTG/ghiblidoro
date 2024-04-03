@@ -334,7 +334,7 @@ a:visited {
   main {
     display: flex;
     align-items: center;
-    height: 75vh;
+    margin-top: 50%;
   }
   #contenido {
     display: flex;
