@@ -73,7 +73,7 @@ function descansoTime() {
   clearInterval(timerInterval);
   isRunning = false;
   startButton.textContent = "Start";
-  timeLeft = 600;
+  timeLeft = 300;
   pomodoroCount = 0;
   updateTimer();
   totoro1.src = getRandom();
