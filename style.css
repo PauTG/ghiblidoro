@@ -223,10 +223,11 @@ button:hover {
 }
 
 .wrapper {
-  max-width: 100%;
-  margin: 0;
+  align-items: center;
+  margin: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+
 }
 
 .tabs::before,
