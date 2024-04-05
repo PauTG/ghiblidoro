@@ -132,9 +132,9 @@ main {
 }
 
 .container {
-  padding: 15px;
-  width: 80vh;
-  height: 55vh;
+  padding: auto;
+  width: 90vh;
+  height: auto;
   border-radius: 5px;
   box-shadow: 0 2px 5px;
   background: rgba(255, 255, 255, 0.28);
@@ -145,7 +145,7 @@ main {
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   color: black;
   justify-content: center;
-  margin: 40px auto;
+  margin: auto;
   align-items: center;
   position: relative;
 }
@@ -304,6 +304,7 @@ b {
   font-size: 15px;
   font-family: 'Ghibli2';
   color: white;
+  margin: 10px;
 }
 .portafolio {
   text-decoration: none;
