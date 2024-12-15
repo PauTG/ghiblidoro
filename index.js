@@ -4,103 +4,15 @@ const resetButton = document.getElementById("reset");
 const btnDescanso = document.getElementById("descanso");
 const btnConcentrarse = document.getElementById("concentrarse");
 const totoro1 = document.getElementById("totoro");
-const totoro2 = document.getElementById("totoroDesc");
-const musica = document.getElementById("ghibliSong")
+const musica = document.getElementById("ghibliSong");
 
-let timeLeft = 1500;
 let isRunning = false;
 let timerInterval;
 let pomodoroCount = 0;
+let startTime;
+let endTime;
 
-window.addEventListener('load', function() {
-  var spinner = document.getElementById('spinner');
-  spinner.style.display = 'none';
-
-  var contenido = document.getElementById('contenido');
-  contenido.style.display = 'block';
-});
-
-function updateTimer() {
-  const minutes = Math.floor(timeLeft / 60);
-  const seconds = timeLeft % 60;
-  timerDisplay.textContent = `${minutes}:${seconds
-    .toString()
-    .padStart(2, "0")}`;
-}
-
-function startTimer() {
-  if (!isRunning) {
-    isRunning = true;
-    startButton.textContent = "Pause";
-    timerInterval = setInterval(() => {
-      if (timeLeft < 1) {
-        document.getElementById("notification").play();
-      }
-      if (timeLeft > 0) {
-        timeLeft--;
-        updateTimer();
-      } else {
-        clearInterval(timerInterval);
-        isRunning = false;
-        startButton.textContent = "Start";
-        if (pomodoroCount % 2 === 0) {
-          timeLeft = 1500;
-        } else {
-          timeLeft = 1500;
-        }
-        pomodoroCount++;
-        updateTimer();
-      }
-    }, 1000);
-  } else {
-    clearInterval(timerInterval);
-    isRunning = false;
-    startButton.textContent = "Resume";
-  }
-}
-
-function resetTimer() {
-  clearInterval(timerInterval);
-  isRunning = false;
-  startButton.textContent = "Start";
-  timeLeft = 1500;
-  pomodoroCount = 0;
-  updateTimer();
-  concentracionTime();
-}
-
-function descansoTime() {
-  clearInterval(timerInterval);
-  isRunning = false;
-  startButton.textContent = "Start";
-  timeLeft = 300;
-  pomodoroCount = 0;
-  updateTimer();
-  totoro1.src = getRandom();
-}
-
-function concentracionTime() {
-  clearInterval(timerInterval);
-  isRunning = false;
-  startButton.textContent = "Start";
-  timeLeft = 1500;
-  pomodoroCount = 0;
-  updateTimer();
-  totoro1.src = getRandom();
-}
-
-function getRandom() {
-  var randomIndice = Math.floor(Math.random() * popurriImagen.length);
-  var randomUrl = popurriImagen[randomIndice];
-  var actualUrl = totoro1.src;
-  if (actualUrl == randomUrl) {
-    return getRandom();
-  }
-  return randomUrl;
-}
-
-
-
+// Lista de GIFs de Totoro
 const popurriImagen = [
   "https://media4.giphy.com/media/mEhI4VFNXGk39Npvtx/giphy.gif?cid=ecf05e47mos29e9qyres9u4qb64lamrc4wyp3605xu97tj5k&ep=v1_gifs_related&rid=giphy.gif&ct=s",
   "https://media2.giphy.com/media/VD43RdK9ozWJ6cllgy/giphy.gif?cid=ecf05e47j8td01xnao1zu18sg86wd4dq8yhnpvpqrmnu30bz&ep=v1_stickers_search&rid=giphy.gif&ct=s",
@@ -116,12 +28,96 @@ const popurriImagen = [
 ];
 
 
+window.addEventListener("load", function () {
+  document.getElementById("spinner").style.display = "none";
+  document.getElementById("contenido").style.display = "block";
+  updateTimer(1500);
+});
+
+
+function updateTimer(timeLeft) {
+  const minutes = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+  timerDisplay.textContent = `${minutes}:${seconds.toString().padStart(2, "0")}`;
+}
+
+
+function calculateTimeLeft() {
+  const now = new Date();
+  return Math.max(0, Math.round((endTime - now) / 1000)); 
+}
+
+
+function startTimer() {
+  if (!isRunning) {
+    isRunning = true;
+    startButton.textContent = "Pause";
+
+
+    const duration = pomodoroCount % 2 === 0 ? 1500 : 300; 
+    startTime = new Date();
+    endTime = new Date(startTime.getTime() + duration * 1000);
+
+    timerInterval = setInterval(() => {
+      const timeLeft = calculateTimeLeft();
+      if (timeLeft > 0) {
+        updateTimer(timeLeft);
+      } else {
+        clearInterval(timerInterval);
+        document.getElementById("notification").play();
+        isRunning = false;
+        startButton.textContent = "Start";
+        pomodoroCount++;
+        startTimer();
+      }
+    }, 1000);
+  } else {
+    clearInterval(timerInterval);
+    isRunning = false;
+    startButton.textContent = "Resume";
+  }
+}
+
+
+function resetTimer() {
+  clearInterval(timerInterval);
+  isRunning = false;
+  startButton.textContent = "Start";
+  pomodoroCount = 0;
+  updateTimer(1500); 
+}
+
+
+function descansoTime() {
+  clearInterval(timerInterval);
+  isRunning = false;
+  startButton.textContent = "Start";
+  pomodoroCount = 1; 
+  updateTimer(300); 
+  totoro1.src = getRandom();
+}
+
+
+function concentracionTime() {
+  clearInterval(timerInterval);
+  isRunning = false;
+  startButton.textContent = "Start";
+  pomodoroCount = 0; 
+  updateTimer(1500); 
+  totoro1.src = getRandom();
+}
+
+function getRandom() {
+  const randomIndice = Math.floor(Math.random() * popurriImagen.length);
+  return popurriImagen[randomIndice];
+}
+
+// Eventos
 btnDescanso.addEventListener("click", descansoTime);
 startButton.addEventListener("click", startTimer);
 resetButton.addEventListener("click", resetTimer);
 btnConcentrarse.addEventListener("click", concentracionTime);
-musica.addEventListener("ended", function() {
-  musica.currentTime = 0; // Reinicia la reproducción al principio
- musica.play(); // Reproduce de nuevo
+musica.addEventListener("ended", function () {
+  musica.currentTime = 0; 
+  musica.play(); 
 });
-updateTimer();
